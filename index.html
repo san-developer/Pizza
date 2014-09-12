@@ -1,79 +1,1313 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en-US" ng-app="App">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Pizza : ">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="../coffee-shop/wp-content/uploads/2014/07/favicon.png" type="image/x-icon" />
+    <title>Annina Pizza for your heart desire. New, the only Italian pizza and the best in Tbilisi, you have to try it.</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="xmlrpc.php" />
+    <meta name='robots' content='noindex,follow' />
+    <link rel="alternate" type="application/rss+xml" title="Pizza place &raquo; Feed" href="feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="Pizza place &raquo; Comments Feed" href="comments/feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="Pizza place &raquo; home Comments Feed" href="home/feed/index.html" />
+    <link rel='stylesheet' id='font_type_1-css' href='http://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600%2C700%2C300&amp;subset=latin%2Clatin-ext&amp;ver=3.9.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='font_type_2-css' href='http://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600%2C700%2C300&amp;subset=latin%2Clatin-ext&amp;ver=3.9.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='theme_main_style-css' href='wp-content/themes/kataleya/style2e46.css?ver=3.9.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='layerslider-css' href='wp-content/plugins/LayerSlider/static/css/layerslider3c21.css?ver=5.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='ls-google-fonts-css' href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900|Open+Sans:300|Indie+Flower:regular|Oswald:300,regular,700&amp;subset=latin,latin-ext' type='text/css' media='all' />
+    <link rel='stylesheet' id='colorpicker-css' href='wp-content/plugins/colorpicker/colorpicker2e46.css?ver=3.9.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='custom_styles-css' href='wp-content/themes/kataleya/includes/custom-styles2e46.css?ver=3.9.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='theme_wordpress_style-css' href='wp-content/themes/kataleya/css/wordpress2e46.css?ver=3.9.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='custom-css' href='wp-content/themes/kataleya/custom2e46.css?ver=3.9.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-css' href='m/css/font-awesome.min2e46.css?ver=3.9.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='prettyphoto-css' href='wp-content/plugins/js_composer/assets/lib/prettyphoto/css/prettyPhoto9c92.css?ver=4.2.3' type='text/css' media='screen' />
 
-    <title>Pizza</title>
-  </head>
+    <script type='text/javascript' src='m/js/jquerya4e6.js?ver=1.11.0'></script>
+    <script type='text/javascript' src='m/js/jquery-migrate.min1576.js?ver=1.2.1'></script>
+    <script type='text/javascript' src='m/js/layerslider.kreaturamedia.jquery3c21.js?ver=5.1.1'></script>
+    <script type='text/javascript' src='m/js/greensock4a80.js?ver=1.11.2'></script>
+    <script type='text/javascript' src='m/js/layerslider.transitions3c21.js?ver=5.1.1'></script>
 
-  <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/san-developer/Pizza">View on GitHub</a>
+    <script data-require="angular.js@1.3.0-beta.5" data-semver="1.3.0-beta.5" src="m/js/angular/angular.js"></script>
+    <script data-require="ui-router@*" data-semver="0.2.10" src="m/js/angular/angular-ui-router.js"></script>
+    <script src="m/js/underscore.js"></script>
+    <script src="m/js/angular/main.js"></script>
+    <script src="m/js/angular/factories.js"></script>
+    <script src="m/js/angular/classes.js"></script>
 
-          <h1 id="project_title">Pizza</h1>
-          <h2 id="project_tagline"></h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/san-developer/Pizza/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/san-developer/Pizza/tarball/master">Download this project as a tar.gz file</a>
-            </section>
+    <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+    <script src='https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js'></script>
+
+
+
+
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+    <link rel='next' title='blog' href='blog/index.html' />
+    <meta name="generator" content="WordPress 3.9.2" />
+    <link rel='canonical' href='index.html' />
+    <link rel='shortlink' href='index.html' />
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress." />
+</head>
+
+<body class="home page page-id-10 page-template-default  responsive sticky-menu menu-style-2 wpb-js-composer js-comp-ver-4.2.3 vc_responsive" ng-controller="MainCtrl">
+    <span ui-view=""></span>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+                    <div id="language" style="float: right;">
+                        <a href="#/en" data-ui-sref="lang({lang : 'en'})">
+                            <img src="m/i/flags/gb.png" alt="English" title="English" onclick="">
+                        </a>
+                        <a href="#/ge" data-ui-sref="lang({lang : 'ge'})">
+                            <img src="m/i/flags/ge.png" alt="Georgian" title="Georgian" onclick="">
+                        </a>
+                    </div>
+
+                    <div class="site-logo pull-left">
+                        <a href="index.html">
+                            <img style="width: 160px; height: 48px" alt="Always fresh, don't miss it" src="wp-content/uploads/2014/07/logo_head_big.png">
+                        </a>
+                    </div>
+                    <nav role="navigation" class="navbar pull-right">
+                       
+                        <div class="navbar-header">
+                            <button type="button" data-toggle="collapse" data-target=".site-navigation" class="navbar-toggle">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="fa fa-bars"></span>
+                            </button>
+                        </div>
+
+                        <ul id="menu-main-menu" class="site-navigation">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children">
+                                <a href="#home">{{AppSvc.Languages.CurrentLang.GetPhrase('home')}}</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                        <a href="http://anpsthemes.com/kataleya/restaurant/">restaurant</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home">
+                                        <a href="index.html">pizza place</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                        <a href="http://anpsthemes.com/kataleya/coffee-shop/">coffee shop</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                <a href="#pizzas">{{AppSvc.Languages.CurrentLang.GetPhrase('PizzaMenu')}}</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                <a href="#pizzeria">{{AppSvc.Languages.CurrentLang.GetPhrase('pizzeria')}}</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom" ng-if="HasOrder">
+                                <a href="#order">order</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page" ng-if="false">
+                                <a href="blog/index.html">blog</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                <a href="#contact">{{AppSvc.Languages.CurrentLang.GetPhrase('contact')}}</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
+
+
+        <section class="container">
+            <div id="home" class="row">
+                <div class="col-md-12">
+                    <div class="wpb_layerslider_element wpb_content_element">
+                        <script type="text/javascript">
+                            var lsjQuery = jQuery;
+                        </script>
+                        <script type="text/javascript">
+                            lsjQuery(document).ready(function () {
+                                if (typeof lsjQuery.fn.layerSlider == "undefined") {
+                                    lsShowNotice('layerslider_1', 'jquery');
+                                } else {
+                                    lsjQuery("#layerslider_1").layerSlider({
+                                        responsiveUnder: 1200,
+                                        layersContainer: 1170,
+                                        skin: 'kataleya',
+                                        globalBGImage: 'http://anpsthemes.com/kataleya/pizza-place/wp-content/uploads/2014/07/pizza-slider.jpg',
+                                        showCircleTimer: false,
+                                        skinsPath: 'http://anpsthemes.com/kataleya/pizza-place/wp-content/plugins/LayerSlider/static/skins/'
+                                    })
+                                }
+                            });
+                        </script>
+                        <div class="ls-wp-fullwidth-container">
+                            <div class="ls-wp-fullwidth-helper">
+                                <div id="layerslider_1" class="ls-wp-container" style="width:100%;height:900px;margin:0 auto;margin-bottom: 0px;">
+                                    <div class="ls-slide" data-ls=" transition2d: all;">
+                                        <p class="ls-l" style="top:422px;left:329px;font-family:pacifico-webfont;font-size:60px;color:#ffffff;white-space: nowrap;"><span class="color">pizza</span> to fill your soul</p>
+                                        <p class="ls-l" style="top:526px;left:50%;font-family:open sans;font-size:30px;white-space: nowrap;">you have to taste it</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" vc_custom_1406124674072 style-2">
+            <div class="container no-margin">
+                <div class="row">
+                    <div class="col-md-12">
+                        <svg class="mini-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="126px" height="112px" viewBox="0 0 126 112" enable-background="new 0 0 126 112" xml:space="preserve">
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M63.016,1.134C55.414,6.166,53.994,17.37,53,29c5.021,1.321,9.101,3.579,10.016,8.998 C63.93,32.579,68.01,30.321,73.031,29C72.037,17.37,70.617,6.166,63.016,1.134z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M63.125,49.996C61.076,24.065,20.794,22.264,1,34c0,0.667,0.167,0.25,0.167,0.917C7.297,55.219,27.661,71.48,55.109,64 c-6.523,7.979,3.71,30.104-5.01,40c3.785,3.008,10.959,1.13,13.026-2.999c2.068,4.129,9.242,6.007,13.027,2.999 c-8.721-9.896,1.512-32.021-5.011-40c27.448,7.48,47.813-8.781,53.942-29.083c0-0.667,0.167-0.25,0.167-0.917 C105.457,22.264,65.175,24.065,63.125,49.996z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M50,70c-25.705-1.039-29.236,20.098-34,40C31.967,101.301,53.156,97.822,50,70z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M76.297,70c25.705-1.039,29.236,20.098,34,40C94.33,101.301,73.141,97.822,76.297,70z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <h5 class='section-heading text-center'><span>always fresh, don&#8217;t miss it</span></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" vc_custom_1406124697413 style-2">
+            <div class="container no-margin">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="posts blog">
+                            <article class='col-md-4 col-sm-6'>
+                                <a href='firewood-oven-pizza-is-the-best/index.html'>
+                                    <img width="1683" height="1189" src="wp-content/uploads/2014/07/1.jpg" class="attachment-post-thumb wp-post-image" alt="1" />
+                                    <div class='hover'>
+                                        <i class='fa fa-cutlery'></i>
+                                    </div>
+                                </a><a href='firewood-oven-pizza-is-the-best/index.html'><h2>firewood oven pizza is the best</h2></a>
+                                <p>
+                                    Proin ut tincidunt ante, eget pulvinar ante. Sed nec erat et felis placerat facilisis id tristique diam. Aliquam ut pellentesque lorem.
+                                </p>
+                            </article>
+                            <article class='col-md-4 col-sm-6'>
+                                <a href='special-offer-for-the-whole-family/index.html'>
+                                    <img width="1683" height="1189" src="wp-content/uploads/2014/07/2.jpg" class="attachment-post-thumb wp-post-image" alt="2" />
+                                    <div class='hover'>
+                                        <i class='fa fa-cutlery'></i>
+                                    </div>
+                                </a><a href='special-offer-for-the-whole-family/index.html'><h2>special offer for the whole family</h2></a>
+                                <p>
+                                    Proin ut tincidunt ante, eget pulvinar ante. Sed nec erat et felis placerat facilisis id tristique diam. Aliquam ut pellentesque lorem.
+                                </p>
+                            </article>
+                            <article class='col-md-4 col-sm-6'>
+                                <a href='online-order-to-your-home/index.html'>
+                                    <img width="1683" height="1189" src="wp-content/uploads/2014/07/3.jpg" class="attachment-post-thumb wp-post-image" alt="3" />
+                                    <div class='hover'>
+                                        <i class='fa fa-cutlery'></i>
+                                    </div>
+                                </a><a href='online-order-to-your-home/index.html'><h2>online order to your home</h2></a>
+                                <p>
+                                    Proin ut tincidunt ante, eget pulvinar ante. Sed nec erat et felis placerat facilisis id tristique diam. Aliquam ut pellentesque lorem.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" vc_custom_1406125147247">
+            <div class="container no-margin">
+                <div class="row">
+                    <div class="col-md-12">
+                        <svg class="mini-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="126px" height="112px" viewBox="0 0 126 112" enable-background="new 0 0 126 112" xml:space="preserve">
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M63.016,1.134C55.414,6.166,53.994,17.37,53,29c5.021,1.321,9.101,3.579,10.016,8.998 C63.93,32.579,68.01,30.321,73.031,29C72.037,17.37,70.617,6.166,63.016,1.134z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M63.125,49.996C61.076,24.065,20.794,22.264,1,34c0,0.667,0.167,0.25,0.167,0.917C7.297,55.219,27.661,71.48,55.109,64 c-6.523,7.979,3.71,30.104-5.01,40c3.785,3.008,10.959,1.13,13.026-2.999c2.068,4.129,9.242,6.007,13.027,2.999 c-8.721-9.896,1.512-32.021-5.011-40c27.448,7.48,47.813-8.781,53.942-29.083c0-0.667,0.167-0.25,0.167-0.917 C105.457,22.264,65.175,24.065,63.125,49.996z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M50,70c-25.705-1.039-29.236,20.098-34,40C31.967,101.301,53.156,97.822,50,70z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M76.297,70c25.705-1.039,29.236,20.098,34,40C94.33,101.301,73.141,97.822,76.297,70z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <h5 class='section-heading text-center' id='pizzas'><span>Annina pizza menu</span></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container vc_custom_1406125190813">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-offset-1 col-md-2 vertical">
+                        <ul class='nav nav-tabs'>
+                            <li class='active'>
+                                <a href="#classic" data-toggle="tab">classic</a>
+                            </li>
+                            <li>
+                                <a href="#fishery" data-toggle="tab">Fishery</a>
+                            </li>
+                            <li>
+                                <a href="#vegetarian" data-toggle="tab">Vegetarian</a>
+                            </li>
+                            <li>
+                                <a href="#meat" data-toggle="tab">meat</a>
+                            </li>
+                            <li>
+                                <a href="#special" data-toggle="tab">special</a>
+                            </li>
+                            <li>
+                                <a href="#spicy" data-toggle="tab">spicy</a>
+                            </li>
+                            <li>
+                                <a href="#vegi" data-toggle="tab">vegi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='tab-content col-md-7'>
+                        <div id="classic" class="tab-pane active">
+                            <div class='food-item price-right'>
+                                <h3>Pizza Margherita</h3>
+                                <p>Tomato sauce, mozzarella</p>
+                                <h4 class='price'>7.90 <span>gel</span></h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>House pizza- Salsiccia e pepperoni</h3>
+                                <p>Tomato sauce, mozzarella, fresh sausages, chili, olives</p>
+                                <h4 class='price'>10.70 <span>gel</span></h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>Pizza Bacon</h3>
+                                <p>Tomato sauce, mozzarella, bacon</p>
+                                <h4 class='price'>10.50 <span>gel</span></h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>Pizza Diavola</h3>
+                                <p>Tomato sauce, mozzarella, salami, hot dog sausages</p>
+                                <h4 class='price'>9.90 <span>gel</span></h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>Pizza Salsiccia</h3>
+                                <p>Tomato sauce, mozzarella, fresh sausages</p>
+                                <h4 class='price'>9.90 <span>gel</span></h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>Pizza Prosciuto e funghi</h3>
+                                <p>Tomato sauce, mozzarella, ham, mushrooms</p>
+                                <h4 class='price'>9.70 <span>gel</span></h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>Pizza Viennese</h3>
+                                <p>Tomato sauce, mozzarella, hot dog sausages</p>
+                                <h4 class='price'>8.90 <span>gel</span></h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>Pizza Ninja</h3>
+                                <p>Tomato sauce, mozzarella, french fries</p>
+                                <h4 class='price'>8.90 <span>gel</span></h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>Pizza 4 formaggi</h3>
+                                <p>Tomato sauce, mozzarella, gorgonzola, emmental, italian cheese</p>
+                                <h4 class='price'>13.90 <span>gel</span></h4>
+                            </div>
+                        </div>
+                        <div id="fishery" class="tab-pane">
+                            <div class='food-item price-right'>
+                                <h3>Pizza scoglio-frutti di mare</h3>
+                                <p>Tomato sauce, mozzarella, fishery mix</p>
+                                <h4 class='price'>13.90 <span>gel</span></h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>Pizza Siciliana-tonnata</h3>
+                                <p>Tomato sauce, mozzarella, tunnafish in olive oil, onion</p>
+                                <h4 class='price'>10.90 <span>gel</span></h4>
+                            </div>
+                        </div>
+                        <div id="vegetarian" class="tab-pane">
+                            <div class='food-item price-right'>
+                                <h3>Pizza Estiva</h3>
+                                <p>Tomato sauce, mozzarella, fresh tomatos, basil</p>
+                                <h4 class='price'>8.60 <span>gel</span></h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>Pizza Ninja</h3>
+                                <p>Tomato sauce, mozzarella, french fries</p>
+                                <h4 class='price'>9.20 <span>gel</span></h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>Pizza Melanzane grigliate</h3>
+                                <p>Tomato sauce, mozzarella, mushrooms, badigiani</p>
+                                <h4 class='price'>9.70 <span>gel</span></h4>
+                            </div>
+                           
+                        </div>
+                        <div id="meat" class="tab-pane">
+                            <div class='food-item price-right'>
+                                <h3>pizza beef</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'>7</h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>pizza chicken</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'>9</h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>pizza kebab</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'><span>$</span>9</h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>pizza tuna</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'><span>$</span>9</h4>
+                            </div>
+                        </div>
+                        <div id="special" class="tab-pane">
+                            <div class='food-item price-right'>
+                                <h3>pizza custom</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'><span>$</span>9</h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>pizza for me</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'><span>$</span>9</h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>pizza happy</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'><span>$</span>9</h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>pizza love</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'><span>$</span>9</h4>
+                            </div>
+                        </div>
+                        <div id="spicy" class="tab-pane">
+                            <div class='food-item price-right'>
+                                <h3>pizza burn</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'><span>$</span>8</h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>pizza chilly</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'><span>$</span>9</h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>pizza hot paprika</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'><span>$</span>8</h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>pizza nacho</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'><span>$</span>9</h4>
+                            </div>
+                        </div>
+                        <div id="vegi" class="tab-pane">
+                            <div class='food-item price-right'>
+                                <h3>pizza green</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'><span>$</span>9</h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>pizza margarita</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'><span>$</span>8</h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>pizza onion</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'><span>$</span>8</h4>
+                            </div>
+                            <div class='food-item price-right'>
+                                <h3>pizza rukola</h3>
+                                <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                                <h4 class='price'><span>$</span>7</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id='statement' class="jumbotron text-center parallax" style="background-image: url('wp-content/uploads/2014/07/pizza-statement-1.jpg');">
+            <div class="text">
+                <h2 style="font-weight: 500; color: #363636;">the last <span class="color" style="color: #ff9c00;">restaurant </span>theme you’ll need</h2>
+                <p></p>
+            </div><a target="_self" href="#" class="btn btn-md style-1" id="custom-id-0" style="">buy kataleya</a>
+        </section>
+        <section class=" vc_custom_1406124674072 style-2">
+            <div class="container no-margin">
+                <div class="row">
+                    <div class="col-md-12">
+                        <svg class="mini-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="126px" height="112px" viewBox="0 0 126 112" enable-background="new 0 0 126 112" xml:space="preserve">
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M63.016,1.134C55.414,6.166,53.994,17.37,53,29c5.021,1.321,9.101,3.579,10.016,8.998 C63.93,32.579,68.01,30.321,73.031,29C72.037,17.37,70.617,6.166,63.016,1.134z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M63.125,49.996C61.076,24.065,20.794,22.264,1,34c0,0.667,0.167,0.25,0.167,0.917C7.297,55.219,27.661,71.48,55.109,64 c-6.523,7.979,3.71,30.104-5.01,40c3.785,3.008,10.959,1.13,13.026-2.999c2.068,4.129,9.242,6.007,13.027,2.999 c-8.721-9.896,1.512-32.021-5.011-40c27.448,7.48,47.813-8.781,53.942-29.083c0-0.667,0.167-0.25,0.167-0.917 C105.457,22.264,65.175,24.065,63.125,49.996z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M50,70c-25.705-1.039-29.236,20.098-34,40C31.967,101.301,53.156,97.822,50,70z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M76.297,70c25.705-1.039,29.236,20.098,34,40C94.33,101.301,73.141,97.822,76.297,70z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <h5 class='section-heading text-center' id='pizzeria'><span>kataleya inside</span></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" vc_custom_1406127505625 style-2">
+            <div class="container no-margin">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <div class="wpb_single_image wpb_content_element vc_align_left">
+                            <div class="wpb_wrapper">
+
+                                <img width="916" height="610" src="wp-content/uploads/2014/07/offer.jpg" class=" vc_box_border_grey attachment-full" alt="offer" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="text">
+                            <h5 style="font-weight: 500; color: #363636;">what can <span class="color" style="color: #ff9c00;">kataleya </span>offer</h5>
+                            <p></p>
+                        </div>
+                        <ul class='list icons'>
+                            <li><i class='fa fa-cutlery'></i>we can acomodate 40 people</li>
+                            <li><i class='fa fa-leaf'></i>fresh food every day, produced locally from our neightbours</li>
+                            <li><i class='fa fa-trophy'></i>world renouned chefs with 20 years experience</li>
+                            <li><i class='fa fa-glass'></i>need a romantic getaway, kateleya is for you</li>
+                            <li><i class='fa fa-suitcase'></i>or maybe a business dinner, try us now</li>
+                            <li><i class='fa fa-coffee'></i>or just come for a cupcontact us of exelent coffee</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </section>
+        <section class="container vc_custom_1406132574231" ng-if="HasOrder">
+            <div class="row">
+                <div class="col-md-12">
+                    <svg class="mini-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="126px" height="112px" viewBox="0 0 126 112" enable-background="new 0 0 126 112" xml:space="preserve">
+                    <g>
+                    <g>
+                    <g>
+                    <path d="M63.016,1.134C55.414,6.166,53.994,17.37,53,29c5.021,1.321,9.101,3.579,10.016,8.998 C63.93,32.579,68.01,30.321,73.031,29C72.037,17.37,70.617,6.166,63.016,1.134z"></path>
+                                </g>
+                            </g>
+                        </g>
+                    <g>
+                    <g>
+                    <g>
+                    <path d="M63.125,49.996C61.076,24.065,20.794,22.264,1,34c0,0.667,0.167,0.25,0.167,0.917C7.297,55.219,27.661,71.48,55.109,64 c-6.523,7.979,3.71,30.104-5.01,40c3.785,3.008,10.959,1.13,13.026-2.999c2.068,4.129,9.242,6.007,13.027,2.999 c-8.721-9.896,1.512-32.021-5.011-40c27.448,7.48,47.813-8.781,53.942-29.083c0-0.667,0.167-0.25,0.167-0.917 C105.457,22.264,65.175,24.065,63.125,49.996z"></path>
+                                </g>
+                            </g>
+                        </g>
+                    <g>
+                    <g>
+                    <g>
+                    <path d="M50,70c-25.705-1.039-29.236,20.098-34,40C31.967,101.301,53.156,97.822,50,70z"></path>
+                                </g>
+                            </g>
+                        </g>
+                    <g>
+                    <g>
+                    <g>
+                    <path d="M76.297,70c25.705-1.039,29.236,20.098,34,40C94.33,101.301,73.141,97.822,76.297,70z"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <h2 class='section-heading text-center' id='order'><span>place your order</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="container" ng-if="HasOrder">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="wpb_single_image wpb_content_element pizza-guy visible-lg visible-md vc_align_left">
+                        <div class="wpb_wrapper">
+
+                            <img width="1522" height="1218" src="wp-content/uploads/2014/07/pizza_guy.png" class=" vc_box_border_grey attachment-full" alt="pizza_guy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" vc_custom_1406131639040" ng-if="HasOrder">
+            <div class="container no-margin">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <form class='box' data-menu-order='content-form' role='form'>
+                            <div class='form-group'>
+                                <input type='text' name='name' placeholder='name' />
+                            </div>
+                            <div class='form-group'>
+                                <input type='email' name='email' placeholder='email' />
+                            </div>
+                            <div class='form-group'>
+                                <input type='tel' name='phone' placeholder='phone' />
+                            </div>
+                            <div class='form-group'>
+                                <input type='text' name='address' placeholder='delivery address' />
+                            </div>
+                            <button class='btn btn-md' data-menu-order='content-form-submit'>
+                                choose your order<i class='fa fa-arrow-right'></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </section>
+        <section id='twitter-feeds' class="twitter text-center parallax" style="background-image: url('wp-content/uploads/2014/07/twitter.jpg');">
+            <div class='container'>
+                <div class='row'>
+                    <h2>twitter feeds</h2>
+                    <div id="twitter" data-ride="carousel" class="carousel slide">
+                        <div class='carousel-inner'>
+                            <div class="item active">
+                                I am very proud to repost that Altus went over 100 sales in 10 days! Check our new WooCoomerce update! <a href="http://t.co/JWraobDrDl" target="_blank">http://t.co/JWraobDrDl</a>
+                            </div>
+                            <div class="item">
+                                Finally Altus Wordpress is here, get it now! <a href="http://t.co/JWraobDrDl" target="_blank">http://t.co/JWraobDrDl</a>
+                            </div>
+                            <div class="item"><a href="http://t.co/kQIkgnX4RB" target="_blank">http://t.co/kQIkgnX4RB</a> Hi all, we just issued a new update for Altus, some great new stuff, go check it out!</div>
+                        </div>
+                        <ol class='carousel-indicators'>
+                            <li data-target='#twitter' data-slide-to='0' class='active'></li>
+                            <li data-target='#twitter' data-slide-to='1' class=''></li>
+                            <li data-target='#twitter' data-slide-to='2' class=''></li>
+                        </ol>
+                    </div><a class='btn btn-md' href='http://twitter.com/AstudioTweet'><i class='fa fa-twitter'></i>Follow us</a>
+                </div>
+            </div>
+        </section>
+        <section class=" vc_custom_1406132940486 style-2">
+            <div class="container no-margin">
+                <div class="row">
+                    <div class="col-md-12">
+                        <svg class="mini-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="126px" height="112px" viewBox="0 0 126 112" enable-background="new 0 0 126 112" xml:space="preserve">
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M63.016,1.134C55.414,6.166,53.994,17.37,53,29c5.021,1.321,9.101,3.579,10.016,8.998 C63.93,32.579,68.01,30.321,73.031,29C72.037,17.37,70.617,6.166,63.016,1.134z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M63.125,49.996C61.076,24.065,20.794,22.264,1,34c0,0.667,0.167,0.25,0.167,0.917C7.297,55.219,27.661,71.48,55.109,64 c-6.523,7.979,3.71,30.104-5.01,40c3.785,3.008,10.959,1.13,13.026-2.999c2.068,4.129,9.242,6.007,13.027,2.999 c-8.721-9.896,1.512-32.021-5.011-40c27.448,7.48,47.813-8.781,53.942-29.083c0-0.667,0.167-0.25,0.167-0.917 C105.457,22.264,65.175,24.065,63.125,49.996z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M50,70c-25.705-1.039-29.236,20.098-34,40C31.967,101.301,53.156,97.822,50,70z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        <g>
+                        <g>
+                        <g>
+                        <path d="M76.297,70c25.705-1.039,29.236,20.098,34,40C94.33,101.301,73.141,97.822,76.297,70z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <h5 class='section-heading text-center' id='contact'><span>contact us</span></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" vc_custom_1406133172199 style-2">
+            <div class="container no-margin">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="text">
+                            <h3 style="font-weight: 500; color: #363636;">contact details</h3>
+                            <p style="color: #727272;">Dont be shy do contact us about everything and anything, we will be glad to answer your questions about kataleya.</p>
+                            <p></p>
+                        </div>
+                        <ul class='contact-info'>
+                            <li><i class='fa fa-home'></i>445 Street, your address in Wherever you are</li>
+                            <li><i class='fa fa-phone'></i>Phone: +386 40 555 666</li>
+                            <li><i class='fa fa-fax'></i>Fax: +386 10 555 66677</li>
+                            <li><i class='fa fa-envelope'></i>Email: support@anpsthemes.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <form class='contact-form' role='form' method='post' data-form='contact' data-subject='This is an awesome email!' data-from='support@anpsthemes.com' data-required='This element is required' data-email='Please insert a valid email' data-number='Please insert numbers only' data-text='Please insert only letters' data-success='Message sucessfuly sent!'>
+                            <div class="form-group">
+                                <input type="text" placeholder="e-mail" name="e-mail" data-validation="none">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="subject" name="subject" data-validation="none">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="phone" name="phone" data-validation="none">
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="5" placeholder="message" name="message" data-validation="none"></textarea>
+                            </div>
+                            <button type='submit' class='btn btn-md'>Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            jQuery(document).ready(function ($) {
+                map('#map1', 'PO Box 16122 Collins Street West Victoria 8007 Australia', 12);
+            });
+        </script>
+        <section class='map' id='map1'></section>
+        <section class="jumbotron text-center" style="">
+            <div class="text">
+                <h2><span style="color: #ff9c00;">all you need</span>, give it a go</h2>
+                <p></p>
+            </div><a target="_self" href="#" class="btn btn-md style-1" id="custom-id-1" style="">buy kataleya</a>
+        </section>
+
+
+        <footer id="site-footer" class="site-footer ">
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li id="anpsimages-2" class="widget-container widget_anpsimages">
+
+                                    <img alt="http://anpsthemes.com/kataleya/pizza-place/wp-content/uploads/2014/07/logo_footer_big.png" src="wp-content/uploads/2014/07/logo_footer_big.png" width="118" height="34" />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <ul>
+                                <li id="anpssocial-2" class="widget-container widget_anpssocial">
+                                    <div class="social">
+                                        <a class="fa fa-twitter" href="#"></a>
+                                        <a class="fa fa-facebook" href="#"></a>
+                                        <a class="fa fa-behance" href="#"></a>
+                                        <a class="fa fa-skype" href="#"></a>
+                                        <a class="fa fa-vimeo-square" href="#"></a>
+                                        <a class="fa fa-google-plus" href="#"></a>
+                                        <a class="fa fa-linkedin-square" href="#"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            jQuery(function ($) {
+                $("#statement").parallax("50%", 0.6);
+                $("#twitter-feeds").parallax("50%", 0.6);
+            });
+        </script>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+    <input type="hidden" id="site-url" value="http://anpsthemes.com/kataleya/pizza-place/wp-content/themes/kataleya" />
+    <div class="order-menu-wrapper" ng-if="false">
+        <button class="close-order fa fa-cutlery"></button>
+        <div class="order-menu">
+            <div class="order-header">
+                <button class="mobile-close">×</button>
+                <input type="text" id="order-search" placeholder="search the menu">
+            </div>
+            <section>
+                <h2 class='color text-center'>classic</h2>
+                <article class="food-item price-right" id="food-item-57">
+                    <header>
+                        <h3>pizza kataleya</h3>
+                        <h4 class="price"><span>$</span>8</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-54">
+                    <header>
+                        <h3>pizza beef</h3>
+                        <h4 class="price"><span>$</span>9</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-52">
+                    <header>
+                        <h3>pizza fit</h3>
+                        <h4 class="price"><span>$</span>8</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-50">
+                    <header>
+                        <h3>pizza all</h3>
+                        <h4 class="price"><span>$</span>9</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+            </section>
+            <section>
+                <h2 class='color text-center'>family</h2>
+                <article class="food-item price-right" id="food-item-100">
+                    <header>
+                        <h3>pizza small</h3>
+                        <h4 class="price"><span>$</span>8</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-99">
+                    <header>
+                        <h3>pizza hot</h3>
+                        <h4 class="price"><span>$</span>8</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-98">
+                    <header>
+                        <h3>pizza play</h3>
+                        <h4 class="price"><span>$</span>6</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-97">
+                    <header>
+                        <h3>pizza kids</h3>
+                        <h4 class="price"><span>$</span>6</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+            </section>
+            <section>
+                <h2 class='color text-center'>huge</h2>
+                <article class="food-item price-right" id="food-item-104">
+                    <header>
+                        <h3>pizza attack</h3>
+                        <h4 class="price"><span>$</span>9</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-103">
+                    <header>
+                        <h3>pizza relative</h3>
+                        <h4 class="price"><span>$</span>9</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-102">
+                    <header>
+                        <h3>pizza big</h3>
+                        <h4 class="price"><span>$</span>10</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-101">
+                    <header>
+                        <h3>pizza shock</h3>
+                        <h4 class="price"><span>$</span>8</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+            </section>
+            <section>
+                <h2 class='color text-center'>meat</h2>
+                <article class="food-item price-right" id="food-item-108">
+                    <header>
+                        <h3>pizza beef</h3>
+                        <h4 class="price"><span>$</span>7</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-107">
+                    <header>
+                        <h3>pizza tuna</h3>
+                        <h4 class="price"><span>$</span>9</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-106">
+                    <header>
+                        <h3>pizza kebab</h3>
+                        <h4 class="price"><span>$</span>9</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-105">
+                    <header>
+                        <h3>pizza chicken</h3>
+                        <h4 class="price"><span>$</span>9</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+            </section>
+            <section>
+                <h2 class='color text-center'>special</h2>
+                <article class="food-item price-right" id="food-item-112">
+                    <header>
+                        <h3>pizza happy</h3>
+                        <h4 class="price"><span>$</span>9</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-111">
+                    <header>
+                        <h3>pizza love</h3>
+                        <h4 class="price"><span>$</span>9</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-110">
+                    <header>
+                        <h3>pizza for me</h3>
+                        <h4 class="price"><span>$</span>9</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-109">
+                    <header>
+                        <h3>pizza custom</h3>
+                        <h4 class="price"><span>$</span>9</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+            </section>
+            <section>
+                <h2 class='color text-center'>spicy</h2>
+                <article class="food-item price-right" id="food-item-116">
+                    <header>
+                        <h3>pizza hot paprika</h3>
+                        <h4 class="price"><span>$</span>8</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-115">
+                    <header>
+                        <h3>pizza nacho</h3>
+                        <h4 class="price"><span>$</span>9</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-114">
+                    <header>
+                        <h3>pizza chilly</h3>
+                        <h4 class="price"><span>$</span>9</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-113">
+                    <header>
+                        <h3>pizza burn</h3>
+                        <h4 class="price"><span>$</span>8</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+            </section>
+            <section>
+                <h2 class='color text-center'>vegi</h2>
+                <article class="food-item price-right" id="food-item-121">
+                    <header>
+                        <h3>pizza margarita</h3>
+                        <h4 class="price"><span>$</span>8</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-119">
+                    <header>
+                        <h3>pizza onion</h3>
+                        <h4 class="price"><span>$</span>8</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-118">
+                    <header>
+                        <h3>pizza rukola</h3>
+                        <h4 class="price"><span>$</span>7</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+                <article class="food-item price-right" id="food-item-117">
+                    <header>
+                        <h3>pizza green</h3>
+                        <h4 class="price"><span>$</span>9</h4>
+                        <div class="quantity">
+                            <button class="minus">-</button><span class="num">0</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </header>
+                    <p>mushrooms, peperoni, cheese, ham,  ketchup, pelati, eggs, beef</p>
+                </article>
+            </section>
+            <div class="order-footer">
+                <h6 class="price text-center color">total: $<span>0</span></h6>
+                <textarea placeholder="Add Notes" class="order-notes hidden"></textarea>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button data-menu-order="notes" class="btn btn-md">add order notes</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button data-menu-order="review" class="btn btn-md">review your order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="order-review hidden">
+                <h2 class="color text-center">your order</h2>
+                <ul class="order-summary"></ul>
+                <h6 class="price text-center color">total: $<span>0</span></h6>
+                <h2 class="color text-center">your delivery info</h2>
+                <form role="form" data-menu-order="customer" data-success="You order was successfully sent!">
+                    <div class="form-group">
+                        <input type="text" placeholder="name" id="order-name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="email" id="order-email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="phone" id="order-phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="delivery address" id="order-address" name="address">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Add Notes" name="note" class="order-notes hidden"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button data-menu-order="back" class="btn btn-md">go back</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button data-menu-order="place" type="submit" class="btn btn-md">place order</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Pizza maintained by <a href="https://github.com/san-developer">san-developer</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <input id="anps-restaurant-plugin-url" type="hidden" value="http://anpsthemes.com/kataleya/pizza-place/wp-content/plugins/anps_restaurant">
+    <div class="colorpicker" ng-if="false">
+        <header>
+            <h2>Style selector</h2>
+        </header>
+        <h2>Choose your layout style</h2>
+        <div class="form-group">
+            <select class="layout">
+                <option value="wide">Wide</option>
+                <option value="boxed">Boxed</option>
+            </select>
+        </div>
+        <h2>Choose your menu style</h2>
+        <div class="form-group">
+            <select class="menu-style">
+                <option value="sticky">Sticky</option>
+                <option value="default">Static</option>
+            </select>
+        </div>
+        <h2>Choose your colour scheme</h2>
+        <ul class="fields colors">
+            <li class="selected">
+                <button class="color-1"></button>
+            </li>
+            <li>
+                <button class="color-2"></button>
+            </li>
+            <li>
+                <button class="color-3"></button>
+            </li>
+            <li>
+                <button class="color-4"></button>
+            </li>
+            <li class="last">
+                <button class="color-5"></button>
+            </li>
+        </ul>
+        <h2>Choose boxed background</h2>
+        <ul class="fields patterns">
+            <li class="selected">
+                <button class="pattern-1"></button>
+            </li>
+            <li>
+                <button class="pattern-2"></button>
+            </li>
+            <li>
+                <button class="pattern-3"></button>
+            </li>
+            <li>
+                <button class="pattern-4"></button>
+            </li>
+            <li class="last">
+                <button class="pattern-5"></button>
+            </li>
+            <li>
+                <button class="pattern-6"></button>
+            </li>
+            <li>
+                <button class="pattern-7"></button>
+            </li>
+            <li>
+                <button class="pattern-8"></button>
+            </li>
+            <li>
+                <button class="pattern-9"></button>
+            </li>
+            <li class="last">
+                <button class="pattern-10"></button>
+            </li>
+        </ul>
+        <div class="colorpicker-close">
+            <button></button>
+        </div>
     </div>
+    <script type='text/javascript' src='wp-content/plugins/anps_restaurant/js/functions2e46.js?ver=3.9.2'></script>
+    <script type='text/javascript' src='wp-content/plugins/anps_restaurant/js/jquery.cookie2e46.js?ver=3.9.2'></script>
+    <script type='text/javascript' src='wp-content/themes/kataleya/js/isotope2e46.js?ver=3.9.2'></script>
+    <script type='text/javascript' src='wp-content/themes/kataleya/js/smoothscroll2e46.js?ver=3.9.2'></script>
+    <script type='text/javascript' src='wp-content/themes/kataleya/js/bootstrap/carousel2e46.js?ver=3.9.2'></script>
+    <script type='text/javascript' src='wp-content/themes/kataleya/js/bootstrap/transition2e46.js?ver=3.9.2'></script>
+    <script type='text/javascript' src='wp-content/themes/kataleya/js/jquery.touchSwipe2e46.js?ver=3.9.2'></script>
+    <script type='text/javascript' src='wp-content/themes/kataleya/js/theme2e46.js?ver=3.9.2'></script>
+    <script type='text/javascript' src='wp-content/themes/kataleya/js/picturefill2e46.js?ver=3.9.2'></script>
+    <script type='text/javascript' src='wp-content/themes/kataleya/js/parallax2e46.js?ver=3.9.2'></script>
+    <script type='text/javascript' src='wp-content/themes/kataleya/js/imagesloaded2e46.js?ver=3.9.2'></script>
+    <script type='text/javascript' src='wp-content/plugins/js_composer/assets/lib/prettyphoto/js/jquery.prettyPhoto9c92.js?ver=4.2.3'></script>
+    <script type='text/javascript' src='wp-content/themes/kataleya/js/bootstrap/tab2e46.js?ver=3.9.2'></script>
+    <script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false&amp;ver=3.9.2'></script>
+    <script type='text/javascript' src='wp-content/themes/kataleya/js/gmap32e46.js?ver=3.9.2'></script>
+    <script type='text/javascript' src='wp-content/plugins/colorpicker/js/colorpicker2e46.js?ver=3.9.2'></script>
+    <script type='text/javascript' src='wp-content/plugins/colorpicker/js/jquery.cookie2e46.js?ver=3.9.2'></script>
+    <style type="text/css" data-type="vc-shortcodes-custom-css">
+        .vc_custom_1406124674072 {
+            padding-top: 80px !important;
+            padding-bottom: 40px !important;
+        }
 
-    
+        .vc_custom_1406124697413 {
+            padding-bottom: 80px !important;
+        }
 
-  </body>
+        .vc_custom_1406125147247 {
+            padding-top: 80px !important;
+            padding-bottom: 40px !important;
+        }
+
+        .vc_custom_1406125190813 {
+            padding-bottom: 60px !important;
+        }
+
+        .vc_custom_1406124674072 {
+            padding-top: 80px !important;
+            padding-bottom: 40px !important;
+        }
+
+        .vc_custom_1406127505625 {
+            padding-bottom: 80px !important;
+        }
+
+        .vc_custom_1406132574231 {
+            margin-top: 120px !important;
+        }
+
+        .vc_custom_1406131639040 {
+            padding-top: 0px !important;
+            padding-bottom: 80px !important;
+            background-position: 0 0 !important;
+            background-repeat: no-repeat !important;
+        }
+
+        .vc_custom_1406132940486 {
+            padding-top: 80px !important;
+            padding-bottom: 40px !important;
+        }
+
+        .vc_custom_1406133172199 {
+            padding-bottom: 80px !important;
+        }
+    </style>
+</body>
+
+<!-- Mirrored from anpsthemes.com/kataleya/pizza-place/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 Aug 2014 11:22:46 GMT -->
+
 </html>
